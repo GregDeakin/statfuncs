@@ -1,4 +1,4 @@
-#@ import data.table
+#' @import data.table
 varcheck <- function(DT,
                      value,
                      group ) {
