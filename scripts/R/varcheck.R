@@ -15,3 +15,7 @@ varcheck <- function(DT,
   return(c(within=within,between=between,ratio=within/between))
   
 }
+
+v2 <- function(DT,value) {
+  DT[,get(value)]  
+}
