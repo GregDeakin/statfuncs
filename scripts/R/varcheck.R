@@ -12,6 +12,6 @@ varcheck <- function(DT,
   
   between <- sum(DT[,.(.N*(mean(get(value))-mean(DT[[value]]))^2),by=get(group)][[2]])/(length(unique(DT[[group]]))-1)
   
-  return(c(within=within,between=between,ratio=within/between))
+  return(c(within=within,between=between,ratio=between/within))
   
 }
